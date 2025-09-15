@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.neotech.testcases.AssertionDemo">
+      <class name="com.olimp.testcases.AddEmployeeTest">
         <methods>
-          <include name="test5"/>
+          <include name="writeReport"/>
+          <include name="addEmployee" invocation-numbers="0 1"/>
+          <include name="generateReport"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.neotech.testcases.AssertionDemo -->
+      </class> <!-- com.olimp.testcases.AddEmployeeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
